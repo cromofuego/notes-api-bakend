@@ -93,7 +93,7 @@ app.use((request, response) => {
   })
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => { // es asincrono entonces asi verifico qeu si haya cargado
   console.log(`server runing on port ${PORT}`)
 })
